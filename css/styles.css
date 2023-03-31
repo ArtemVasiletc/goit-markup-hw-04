@@ -455,13 +455,21 @@ header {
   gap: 48px 24px;
 }
 
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .project-cards-list-item {
   flex-basis: calc((100% - 48px) / 3);
 }
 
 .project-cards-list-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-desc-text {
@@ -545,7 +553,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--iris);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-logo {
