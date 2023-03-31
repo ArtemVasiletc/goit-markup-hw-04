@@ -76,6 +76,8 @@ img {
   align-items: center;
 }
 header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -155,8 +157,7 @@ header {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  /* background-color: var(--navy-blue); */
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -212,8 +213,11 @@ header {
 }
 
 .features-logo-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
-  padding: 24px 100px;
+
   background-color: var(--cloud);
   height: 112px;
 }
@@ -341,7 +345,6 @@ header {
 .member-social-logo {
   width: 16px;
   height: 16px;
-  margin: 0 auto;
 }
 
 .team-member-social-logo {
@@ -380,9 +383,15 @@ header {
 
 .customrs-logo-item {
   flex-basis: calc((100% - 120px) / 6);
+}
+
+.customers-company-link {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  padding: 15px 31px;
 }
 
 .customer-company-logo {
@@ -392,12 +401,12 @@ header {
   fill: #8e8f99;
 }
 
-.customrs-logo-item:hover,
-.customrs-logo-item:focus {
+.customers-company-link:hover,
+.customers-company-link:focus {
   border-color: #404bbf;
 }
-.customrs-logo-item:hover .customer-company-logo,
-.customrs-logo-item:focus .customer-company-logo {
+.customers-company-link:hover .customer-company-logo,
+.customers-company-link:focus .customer-company-logo {
   fill: var(--ocean);
 }
 
@@ -545,6 +554,7 @@ header {
   height: 24px;
 }
 
-.social-media-logo-item :hover {
+.social-media-logo-item :hover,
+.social-media-logo-item :focus {
   background-color: #31d0aa;
 }
